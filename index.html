@@ -1,50 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>RoboEats</title>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>RoboEats</title>
 
-        <!-- Website icon -->
+    <!-- Website icon -->
 
-        <!-- Google fonts -->
+    <!-- Google fonts -->
 
-        <!-- CSS -->
-        <link href="assets/css/styles.css" rel="stylesheet" />
-    </head>
+    <!-- CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/a80078a209.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <link href="assets/css/home.css" rel="stylesheet" />
+  </head>
 
-    <body>
-        <!-- Navigation bar | Reference: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
-        <header class="header">
-            <nav class="navbar">
-                <a href="#" class="nav-logo">RoboEats</a>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Locations</a>
-                    </li>
-                </ul>
-                <div class="menu_bars">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </nav>
-        </header>
-    
-        
-        <!-- Main content -->
+  <body>
+    <!-- Navigation bar | Reference: https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci -->
+    <header class="header">
+      <nav class="navbar">
+        <a href="#" class="nav-logo">RoboEats</a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">Locations</a>
+          </li>
+        </ul>
+        <div class="menu_bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
-        <!-- footer -->
+    <!-- Main content -->
+    <main>
+      <div class="mobile main_mobile">
+        <img
+          id="mobile-home-logo"
+          src="https://picsum.photos/200/150"
+          alt="restaurent logo"
+        />
+        <p>
+          An automated restaurant that uses today's cutting edge technology.
+        </p>
+      </div>
+      <div class="desktop">
+        <div class="row">
+          <div class="col-8">
+            <h1>ROBOEATS ROBOTICS RESTAURENT</h1>
+            <p>
+              An automated restaurant that uses today's cutting edge technology
+              providing each service through an AI-enabled robot, for instance,
+              preparing meals from a wide range of cuisines. Additionally,
+              Robots may soon be able to mix drinks and create personalized
+              cocktails for its customers. Our dynamic menu can adjust in real
+              time to meet our guests’ preferences, including eight major
+              allergens and eight major diets. We can truly cook-to-order. Every
+              single time.
+            </p>
+            <button class="btn btn-outline-dark">SEE FULL MENU</button>
+          </div>
+          <div class="col-4">
+            <img
+              id="home-logo"
+              src="https://picsum.photos/300/200"
+              alt="restaurent logo"
+            />
+            <hr />
+            <div id="icons" class="d-flex flex-row justify-content-between">
+              <img src="assets/icons/facebook.svg" alt="facebook icon" />
+              <img src="assets/icons/instagram.svg" alt="instagram icon" />
+              <img src="assets/icons/tiktok.svg" alt="tiktok icon" />
+              <img src="assets/icons/ubereats.svg" alt="ubereats icon" />
+              <img src="assets/icons/doordash.svg" alt="doordash icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="fixed-bottom">
+      <hr style="width: 100%" />
+      <div>
+        <div class="d-flex">
+          <ul>
+            <li>
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Menu</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">About us</a>
+            </li>
+            <li>
+              <a href="#" class="nav-link">Locations</a>
+            </li>
+          </ul>
+          <img
+            class="footer-logo desktop"
+            src="https://picsum.photos/160/100"
+            alt="restaurent logo"
+          />
+          <div class="mobile">
+            <p>FIND US ON</p>
+            <div class="d-flex flex-row flex-wrap">
+              <img src="assets/icons/facebook.svg" alt="doordash icon" />
+              <img src="assets/icons/instagram.svg" alt="doordash icon" />
+              <img src="assets/icons/tiktok.svg" alt="doordash icon" />
+              <img src="assets/icons/ubereats.svg" alt="doordash icon" />
+              <img src="assets/icons/doordash.svg" alt="doordash icon" />
+            </div>
+          </div>
+        </div>
+        <div class="mobile">RoboEats &copy; 2021 | All Rights Reserved</div>
+        <div class="desktop">
+          <div class="d-flex flex-row justify-content-between">
+            <div>RoboEats &copy; 2021 | All Rights Reserved</div>
+            <div class="d-flex flex-row">
+              <img src="assets/icons/facebook.svg" alt="doordash icon" />
+              <img src="assets/icons/instagram.svg" alt="doordash icon" />
+              <img src="assets/icons/tiktok.svg" alt="doordash icon" />
+              <img src="assets/icons/ubereats.svg" alt="doordash icon" />
+              <img src="assets/icons/doordash.svg" alt="doordash icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <script src="assets/js/scripts.js"></script>
-    
-    </body>
+    <script src="assets/js/scripts.js"></script>
+  </body>
 </html>
