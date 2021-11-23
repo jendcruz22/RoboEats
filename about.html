@@ -41,6 +41,10 @@
                 padding: 0;
             }
             
+            .row {
+                margin: 0;
+            }
+
             #about-us img {
                 margin-right: 60px;
             }
@@ -54,10 +58,13 @@
                 font-weight: 900;
                 font-size: 40px;
                 text-transform: uppercase;
-                line-height: 46.88px;
+                line-height: 46.88px;                
+                /* Prevent wrapping at breakpoints */
+                margin: 10px 0;
+                display: inline-block;
             }
 
-            .about-content > * {
+            .about-content {
                 padding: 0 8%;
             } 
 
@@ -99,8 +106,19 @@
                 font-size: 30px;
             }
 
-            @media only screen and (min-width: 320px) {
+            #about-us {
+                margin-bottom: 30px;
+                box-shadow:  0 3px 10px -4px rgb(0 0 0 / 0.2); 
+            }
 
+            #our-customers {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+            }
+
+            @media only screen and (max-width: 375px) {
+                .about-heading {
+                    font-size: 22px;
+                }
             }
 
         </style>
@@ -112,7 +130,7 @@
         <main>
                 <div class="container-fluid" id="about-us">
                     <div class="row">
-                        <div class="hidden-xs hidden-sm hidden-md col">
+                        <div class="col">
                             <img class="img-responsive pull-left" src="./assets/img/about-bg-1.png">
                         </div>
                         <div class="col">
@@ -128,10 +146,8 @@
 
                 <div class="container-fluid" id="our-customers">
                     <div class="row">
-                        <div class="hidden-xs hidden-sm hidden-md col">
-                            <div class="img-responsive pull-right">
-                                <img src="./assets/img/about-bg-2.png">
-                            </div>
+                        <div class="col">
+                            <img class="img-responsive pull-right" src="./assets/img/about-bg-2.png">
                         </div>
                         <div class="col">
                             <div class="about-content">
