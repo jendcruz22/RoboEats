@@ -1,74 +1,141 @@
 <!DOCTYPE html>
 <html>
-    <head> 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="assets/css/menu.css">
+      <!-- BOOTSTRAP -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <!-- Main Content -->
+      <main>
+         <!-- BREAKFAST DESKTOP MOBILE VIEW -->
+         <div class="desktop container-fluid" id="breakfast-menu-options">
+            <h1 id="menu-heading">BREAKFAST MENU</h1>
+            <div class="row equal-cols">
+               <!-- BREAKFAST -->
+               <div class="breakfast-divs col-12 col-sm-6">
+                  <div class="breakfast-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>BREAKFAST</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>Expect problems and eat them for breakfast. All happiness depends on a leisurely breakfast. There is nothing better than a proper breakfast.</p>
+                  </div>
+               </div>
+               <!-- LUNCH -->
+               <div class="breakfast-divs col-12 col-sm-6">
+                  <div class="breakfast-menu">
+                     <img class="img-fluid" src="assets/img/lunch.jpeg">
+                     <h2>LUNCH</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>Whether you're looking for something savory or sweet, a well-deserved lunch break is the best time in the world.</p>
+                  </div>
+               </div>
+            </div>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/css/menu.css">
-
-        <!-- BOOTSTRAP -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-    </head>
-    <body>
-
-        <!-- Main Content -->
-        <main>
-            <div class="container-fluid" id="menu-options">
-                <h1 id="menu-heading">BREAKFAST MENU</h1>
-                <div class="row equal-cols">
-
-                    <!-- BREAKFAST -->
-                    <div class="breakfast-divs col-12 col-sm-6">
-                        <div class="breakfast-menu">
-                            <img class="img-fluid" src="assets/img/breakfast.jpeg">
-                            <h2>BREAKFAST</h2>
-                            <p class="item-cost">$12.45</p>
-                            <p>Expect problems and eat them for breakfast. All happiness depends on a leisurely breakfast. There is nothing better than a proper breakfast.</p>
-                        </div>
-                    </div>
-
-                    <!-- LUNCH -->
-                    <div class="breakfast-divs col-12 col-sm-6">
-                        <div class="breakfast-menu">
-                            <img class="img-fluid" src="assets/img/lunch.jpeg">
-                            <h2>LUNCH</h2>
-                            <p class="item-cost">$12.45</p>
-                            <p>Whether you're looking for something savory or sweet, a well-deserved lunch break is the best time in the world.</p>
-                        </div>
-                    </div>
-                    
+            <div class="row equal-cols">
+                <!-- BREAKFAST -->
+                <div class="breakfast-divs col-12 col-sm-6">
+                   <div class="breakfast-menu">
+                      <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                      <h2>BREAKFAST</h2>
+                      <p class="item-cost">$12.99</p>
+                      <p>Expect problems and eat them for breakfast. All happiness depends on a leisurely breakfast. There is nothing better than a proper breakfast.</p>
+                   </div>
                 </div>
-    
-                <div class="row equal-cols">
+                <!-- LUNCH -->
+                <div class="breakfast-divs col-12 col-sm-6">
+                   <div class="breakfast-menu">
+                      <img class="img-fluid" src="assets/img/lunch.jpeg">
+                      <h2>LUNCH</h2>
+                      <p class="item-cost">$12.99</p>
+                      <p>Whether you're looking for something savory or sweet, a well-deserved lunch break is the best time in the world.</p>
+                   </div>
+                </div>
+             </div>
+             
+            <div class="row equal-cols">
+               <!-- DRINKS -->
+               <div class="breakfast-divs col-12 col-sm-6">
+                  <div class="breakfast-menu">
+                     <img class="img-fluid" src="assets/img/drinks.jpeg">
+                     <h2>DRINKS</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>Raise a glass to every pour decision ever made - with or without regrets</p>
+                  </div>
+               </div>
+               <!-- DESSERTS -->
+               <div class="breakfast-divs col-12 col-sm-6">
+                  <div class="breakfast-menu">
+                     <img class="img-fluid" src="assets/img/dessert.jpg">
+                     <h2>DESSERTS</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>From cookies to cakes, any of these decadent treats will end your meal on a high note. Indulge in one of these all-time favorite delicious treats, from a home-style cobbler to decadent brownies for the perfect ending to dinner.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- ========================================================================================================================================================================================================================== -->
+         <!-- BREAKFAST MENU MOBILE VIEW -->
+         <div id="breakfast-menu-options" class="mobile container-fluid">
+            <h1 id="menu-heading">BREAKFAST MENU</h1>
 
-                    <!-- DRINKS -->
-                    <div class="breakfast-divs col-12 col-sm-6">
-                        <div class="breakfast-menu">
-                            <img class="img-fluid" src="assets/img/drinks.jpeg">
-                            <h2>DRINKS</h2>
-                            <p class="item-cost">$12.45</p>
-                            <p>Raise a glass to every pour decision ever made - with or without regrets</p>
-                        </div>
-                    </div>
-
-                    <!-- DESSERTS -->
-                    <div class="breakfast-divs col-12 col-sm-6">
-                        <div class="breakfast-menu">
-                            <img class="img-fluid" src="assets/img/dessert.jpg">
-                            <h2>DESSERTS</h2>
-                            <p class="item-cost">$12.45</p>
-                            <p>From cookies to cakes, any of these decadent treats will end your meal on a high note. Indulge in one of these all-time favorite delicious treats, from a home-style cobbler to decadent brownies for the perfect ending to dinner.</p>
-                        </div>
-                    </div>
-
+            <div class=" bf-item row">     
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                    <p class="item-cost">$12.99</p>
+                </div>   
+                <div class="col-md-6 col-xs-6 text-right">
+                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
                 </div>
             </div>
-        </main>
-        <!-- End of Main content -->
-        
-    </body>
+
+            <div class=" bf-item row">     
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                    <p class="item-cost">$12.99</p>
+                </div>   
+                <div class="col-md-6 col-xs-6 text-right">
+                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                </div>
+            </div>
+            
+            <div class=" bf-item row">     
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                    <p class="item-cost">$12.99</p>
+                </div>   
+                <div class="col-md-6 col-xs-6 text-right">
+                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                </div>
+            </div>
+
+            <div class=" bf-item row">     
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                    <p class="item-cost">$12.99</p>
+                </div>   
+                <div class="col-md-6 col-xs-6 text-right">
+                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                </div>
+            </div>
+
+            <div class=" bf-item row">     
+                <div class="col-md-6 col-xs-6">
+                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                    <p class="item-cost">$12.99</p>
+                </div>   
+                <div class="col-md-6 col-xs-6 text-right">
+                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                </div>
+            </div>
+            
+         </div>
+      </main>
+      <!-- End of Main content -->
+   </body>
 </html>
