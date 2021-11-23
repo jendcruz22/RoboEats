@@ -13,64 +13,94 @@
 
         <!-- ABOUT US STYLING -->
         <style>
+            /* Common CSS Starts*/
+            /* Fonts on this page:
+                Roboto Bold 700
+                Roboto Black 900
+                Roboto Slab 400
+                Roboto Bold 700
+
+                font-family: 'Libre Caslon Text', serif;
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Roboto Slab', serif;
+            */
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap');
+            /* Common CSS Ends*/
 
             body {
                 background-color: #FCFCFC;
             }
 
-            #about-options {
-                margin: auto;
+            #about-us {
+                margin: 0;
+                padding: 0;
+            }
+
+            .container-fluid {
+                margin: 0;
+                padding: 0;
             }
             
-            .row {
-                margin: 0;
+            #about-us img {
+                margin-right: 60px;
             }
 
-            #about-heading {
-                margin: 10px;
-                font-size: 30px;
-                font-weight: 600;
+            #our-customers img {
+                margin-left: 60px;
+            }
+
+            .about-heading {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-size: 40px;
                 text-transform: uppercase;
+                line-height: 46.88px;
             }
 
-            .about-content {
-                text-align: center;
-                margin: 10px 10px;
-                padding: 10px;
-                background-color: #FFF;
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-            }
-
-            .about-content img {
-                max-width: 100%;
-                height: auto;
-            }
-
-            .about-content h2 {
-                font-size: 18px;
-                text-align: left;
-                font-weight: bold;
-                text-transform: uppercase;
-            }
-        
-            .about-content p {
-                font-size: 16px;
-                text-align: left;
-                margin: 0px 0px 20px 0px;
+            .about-content > * {
+                padding: 0 8%;
             } 
 
-            .about-content a {
-                float: left;
-                padding: 10px;
-                border: 2px solid #000;
-                color: #000;
+            .about-content > p {
+                font-family: 'Libre Caslon Text', serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 24.22px;
+            } 
+
+            .figures {
+                background-color: #F2F1F1;
+            }
+
+            .figures div p {
+                margin: 0;
+                padding: 0;
+            }
+
+            .figures div {
+                padding: 23px 0;
+            }
+
+            .descriptions {
+                font-family: 'Libre Caslon Text', serif;
+                font-weight: 500;
+                font-size: 24px;
+            }
+
+            .numbers {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-size: 80px;
+            }
+
+            .units {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-size: 30px;
             }
 
             @media only screen and (min-width: 320px) {
-                .about-content {
-                    /* padding-bottom: 60px; */
-                    background-color: #FCFCFC;
-                }
+
             }
 
         </style>
@@ -80,13 +110,49 @@
 
         <!-- Main Content -->
         <main>
-            <div class="container-fluid" id="about-options">
-                <h1 id="about-heading">About Us</h1>
-                <div class="row d-flex">
-                    <div class="col-12 col-sm-10 col-sm-offset-1 shadow p-3 mb-5 bg-white rounded">
-                        <div class="about-content">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et ullam cumque fugit repudiandae sapiente. Accusamus nostrum in dolor obcaecati commodi iste autem quidem vitae modi enim expedita sint sed soluta eligendi inventore maiores beatae reprehenderit laudantium, distinctio perferendis. Dolores distinctio ullam pariatur, rerum, inventore vero laboriosam tempore magni atque voluptas vel quae modi aut sunt autem quod! Perspiciatis provident alias neque quam similique numquam deleniti ad officiis in nihil doloribus, ipsa atque inventore ipsam commodi omnis, pariatur nobis, illum harum nisi ut fugiat ducimus voluptate. A aut expedita amet, eveniet nihil accusantium numquam dolorum iure tempore voluptate eligendi necessitatibus! Quae, tempore similique mollitia fugiat, quis dolore non sunt blanditiis natus reiciendis, et numquam quas ut nisi inventore voluptate expedita corrupti laboriosam id consequatur labore. Hic nam et officiis, ipsa animi perferendis! Consequuntur tenetur mollitia iusto, quia omnis amet eligendi nulla exercitationem cupiditate dignissimos ex atque ipsa eius ducimus tempora laboriosam nihil sapiente delectus quam. Commodi quaerat, deserunt, itaque facilis doloremque consequuntur non, minus officiis nostrum molestiae unde! Molestias nostrum eligendi enim inventore dolore amet sit nobis consectetur quod ipsa incidunt nihil doloribus veniam culpa ratione velit similique, repellendus laudantium. Labore earum praesentium quae, soluta ea maxime quos vitae sed optio?</p>    
-                            <img class="img-fluid" src="https://specials-images.forbesimg.com/imageserve/1227638654/960x0.jpg">
+                <div class="container-fluid" id="about-us">
+                    <div class="row">
+                        <div class="hidden-xs hidden-sm hidden-md col">
+                            <img class="img-responsive pull-left" src="/assets/img/about-bg-1.png">
+                        </div>
+                        <div class="col">
+                            <div class="about-content">
+                                <h1 class="about-heading">About Us</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nunc quis feugiat nullam tellus et suspendisse etiam.</p>
+                                <p>Tempus vulputate rhoncus nunc sit. Quisque massa sem facilisis enim, malesuada consectetur. Nibh ipsum vulputate augue faucibus purus at. Nibh nisl, aenean ipsum sodales nisi pulvinar praesent sed. Integer ut egestas mattis id vestibulum cursus adipiscing. Mauris egestas felis quam quis vel lectus nulla. Lacus lectus ac, augue tellus quis maecenas vitae non facilisis. Pulvinar aliquet sed ligula in sed pretium dapibus placerat. Felis euismod ipsum in vitae diam purus venenatis est.</p>
+                                <p>Amet venenatis integer egestas ac adipiscing id sodales. A, diam, turpis aliquam tempus velit vulputate quis id facilisis. Est nam etiam elit vestibulum ornare feugiat lorem. Eget nunc lectus sed morbi fermentum massa sagittis sed consectetur. Sapien, justo, sit vel duis faucibus. Venenatis, malesuada erat neque, varius nulla quis consectetur bibendum. Amet ipsum volutpat mattis eros eget neque, interdum. Arcu quam vitae id aliquet velit donec. Amet consequat ipsum, ante pellentesque cursus rhoncus.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid" id="our-customers">
+                    <div class="row">
+                        <div class="hidden-xs hidden-sm hidden-md col">
+                            <div class="img-responsive pull-right">
+                                <img src="/assets/img/about-bg-2.png">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="about-content">
+                                <h2 class="about-heading">Our customers</h2>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nunc quis feugiat nullam tellus et suspendisse etiam. Tempus vulputate rhoncus nunc sit. Quisque massa sem facilisis enim, malesuada consectetur. Nibh ipsum vulputate augue faucibus purus at. Nibh nisl, aenean ipsum sodales nisi pulvinar praesent sed.</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam nunc quis feugiat nullam tellus et suspendisse etiam.</p>
+                                <div class="figures text-center">
+                                    <div>
+                                        <p><span class="numbers">6.94</span> <span class="units">million</span></p>
+                                        <p><span class="descriptions">ipsum dolor sit amet, consectetur</span></p>
+                                    </div>
+                                    <div>
+                                        <p><span class="numbers">20.13</span> <span class="units">million</span></p>
+                                        <p><span class="descriptions">ipsum dolor sit amet, consectetur</span></p>
+                                    </div>
+                                    <div>
+                                        <p><span class="numbers">85.21</span> <span class="units">million</span></p>
+                                        <p><span class="descriptions">ipsum dolor sit amet, consectetur</span></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

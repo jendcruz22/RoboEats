@@ -13,60 +13,55 @@
 
         <!-- LOCATIONS STYLING -->
         <style>
+            /* Common CSS Starts*/
+            /* Fonts on this page:
+                Roboto Bold 700
+                Roboto Black 900
+                Roboto Slab 400
+                Roboto Bold 700
+
+                font-family: 'Roboto', sans-serif;
+                font-family: 'Roboto Slab', serif;
+            */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap');
+            /* Common CSS Ends*/
+
 
             body {
-                background-color: #FCFCFC;
-            }
-
-            #locations {
-                margin: auto;
-            }
-            
-            .row {
-                margin: 0;
+                background-color: #FFFFFF;
             }
 
             #locations-heading {
-                margin: 10px;
-                font-size: 30px;
-                font-weight: 600;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 900;
+                font-size: 40px;
                 text-transform: uppercase;
-            }
-
-            .locations-content {
-                text-align: center;
-                margin: 10px 10px;
-                padding: 10px;
-                background-color: #FFF;
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-            }
-
-            .locations-content img {
-                max-width: 100%;
-                height: auto;
+                line-height: 46.88px;
             }
 
             .locations-content h2 {
-                font-size: 18px;
-                text-align: left;
-                font-weight: bold;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 32px;
                 text-transform: uppercase;
+                line-height: 37.5px;
             }
         
-            .locations-content p {
-                font-size: 16px;
-                text-align: left;
-                margin: 0px 0px 20px 0px;
-            } 
+            .address {
+                font-family: 'Roboto Slab', serif;
+                font-weight: 400;
+                font-size: 14px;
+            }
 
-            .locations-content a {
-                float: left;
-                padding: 10px;
-                border: 2px solid #000;
-                color: #000;
+            .contact {
+                font-family: 'Roboto Slab', serif;
+                font-weight: 700;
+                font-size: 14px;
+                text-transform: uppercase;
             }
 
             .iframe-container {
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
                 overflow: hidden;
                 padding-top: 56.25%; /* 16:9 aspect ratio */
                 position: relative;
@@ -83,10 +78,18 @@
                 border: 0;
             }
 
-            @media only screen and (min-width: 320px) {
+            @media only screen and (min-width: 1024px) {
+                #locations{
+                    margin: 100px;
+                }
+                .locations-content, #locations-heading {
+                    padding: 0 20px;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
                 .locations-content {
-                    /* padding-bottom: 60px; */
-                    background-color: #FCFCFC;
+                    padding: 0 0 60px 0;
                 }
             }
 
@@ -97,35 +100,42 @@
         <!-- Main Content -->
         <main>
             <div class="container-fluid" id="locations">
-                <h1 id="locations-heading">Locations</h1>
-                <div class="row d-flex">
-                    <div class="col-12 col-sm-5 col-sm-offset-1 shadow p-3 mb-5 bg-white rounded">
+                <div class="row">
+                    <div class="col-12 col-sm-6">
+                        <h1 id="locations-heading">Locations</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-6">
                         <div class="locations-content">
-                            <h2>Mississauga Location</h2>
                             <div class="iframe-container">
                                 <iframe class="responsive-iframe" loading="lazy" allowfullscreen
                                 src="https://www.google.com/maps/embed/v1/place?q=6301 Silver Dart Dr, Mississauga, ON L5P 1B2&key=AIzaSyCi1MWEBzG5P64kroT4qSaoLBSH8E5zxuE">
                                 </iframe>
                             </div>
-                            <p>6301 Silver Dart Dr, Mississauga, ON L5P 1B2</p>
-                            <p>OPEN 24/7 | SUNDAY-SATURDAY</p>
-                            <p>416-123-1231</p>
+                            <div class="locaitons-info">
+                                <h2>Mississauga Location</h2>
+                                <p class="address">6301 Silver Dart Dr, Mississauga, ON L5P 1B2</p>
+                                <p class="contact">OPEN 24/7 | SUNDAY-SATURDAY</p>
+                                <p class="contact">416-123-1231</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-12 col-sm-5">
+                    <div class="col-12 col-sm-6">
                         <div class="locations-content">
-                            <h2>Etobicoke Location</h2>
                             <div class="iframe-container">
                                 <iframe class="responsive-iframe" loading="lazy" allowfullscreen
                                 src="https://www.google.com/maps/embed/v1/place?q=205 Humber College Blvd, Etobicoke, ON M9W 5L7&key=AIzaSyCi1MWEBzG5P64kroT4qSaoLBSH8E5zxuE">
                                 </iframe>
                             </div>
-                            <p>205 Humber College Blvd, Etobicoke, ON M9W 5L7</p>
-                            <p>OPEN 9AM-9PM | SUNDAY-SATURDAY</p>
-                            <p>416-321-3213</p>
+                            <div class="locaitons-info">
+                                <h2>Etobicoke Location</h2>
+                                <p class="address">205 Humber College Blvd, Etobicoke, ON M9W 5L7</p>
+                                <p class="contact">OPEN 9AM-9PM | SUNDAY-SATURDAY</p>
+                                <p class="contact">416-321-3213</p>
+                            </div> 
                         </div>
                     </div>
-                </div>
                 </div>
             </div>
         </main>
