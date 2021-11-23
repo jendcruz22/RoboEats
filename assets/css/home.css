@@ -1,9 +1,9 @@
 .main {
   color: white;
-  background-image: url("/assets/img/home_bg.png");
+  background-image: url("../img/home_bg.png");
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5); /* Reference link: https://codepen.io/gc-nomade/pen/wouBe */
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: black;
   padding: 2em 0;
   display: flex;
 }
