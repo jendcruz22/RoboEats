@@ -34,33 +34,8 @@
 /* navigation end */
 
 /* footer - start */
-.footer__top {
-  margin-top: 1em;
-  display: flex;
-}
-
-.footerNav {
-  list-style: none;
-}
-
-.footerNav__link {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-
-.footer__logo {
-  margin-left: 2em;
-  max-height: 100px;
-}
-
 .footer {
   margin: 0 2em;
-}
-
-.footer__bottom {
   display: flex;
   justify-content: space-between;
 }
