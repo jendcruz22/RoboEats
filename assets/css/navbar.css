@@ -1,0 +1,137 @@
+/* Common CSS Starts*/
+/* Fonts on this page:
+    Roboto Bold 700
+    Roboto Black 900
+    Roboto Slab 400
+    Roboto Bold 700
+
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap');
+/* Common CSS Ends*/
+
+
+
+/* Overrides Default Bootstrap Styles Starts */
+.nav-text {
+    font-family: 'Roboto', sans-serif; /* Set Navbar Fonts */
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.navbar ul li a:active, .navbar ul li a:visited {
+    color: #000000; /* Overrides Links Color */
+}
+
+.navbar-custom {
+    background-color:#FFFFFF; /* Set Navbar Color */
+}
+
+.navbar .navbar-brand {
+    padding-top: 5px; /* Set Padding from Top for Logo */
+}
+
+.navbar .navbar-brand img {
+    height: 45px; /* Set Logo Height */
+}
+
+.icon-bar {
+    background-color:#0D0D0D !important; /* Overrides Hamburger Menu */
+}
+/* Overrides Default Bootstrap Styles Ends */
+
+
+/* Overlay CSS Starts */
+/* Reference: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
+/* background */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: rgb(19,19,19);
+    background-color: rgba(19,19,19, 0.95);
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 50px); /* Minus margin-top */
+    text-align: center;
+    margin-top: 50px; /* Margin needed for close button */
+    padding: 0;
+}
+
+/* The navigation links inside the overlay */
+.overlay .overlay-links > a {
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #FFFFFF;
+    display: block;
+    transition: 0.3s;
+    padding: 0;
+}
+
+.overlay-logo {
+    width: 200px;
+    padding: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #FCFCFC;
+}
+
+/* Position the close button */
+.overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 35px;
+}
+
+/* Close button */
+#myNav .closebtn {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-family: 'Libre Caslon Text', serif;
+}
+
+.overlay-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+    color:#FFFFFF;
+}
+
+.overlay-footer-icons {
+    padding: 5px 2px;
+}
+
+.overlay-footer-text-1 {
+    margin: 0;
+    padding: 0;
+}
+
+.overlay-footer-text-2 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Overlay CSS Ends */
