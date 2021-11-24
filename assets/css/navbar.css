@@ -29,10 +29,11 @@
 
 .navbar-custom {
     background-color:#FFFFFF; /* Set Navbar Color */
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 .navbar .navbar-brand {
-    padding-top: 5px; /* Set Padding from Top for Logo */
+    padding-top: 3px; /* Set Padding from Top for Logo */
 }
 
 .navbar .navbar-brand img {

@@ -1,0 +1,107 @@
+/* Common CSS Starts*/
+/* Fonts on this page:
+    Roboto Bold 700
+    Roboto Black 900
+    Roboto Slab 400
+    Roboto Bold 700
+
+    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap');
+/* Common CSS Ends*/
+
+body {
+    background-color: #FCFCFC;
+}
+
+#about-us {
+    margin: 0;
+    padding: 0;
+}
+
+main .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+#about-us img {
+    margin-right: 60px;
+}
+
+#our-customers img {
+    margin-left: 60px;
+}
+
+.about-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 46.88px;                
+    /* Prevent wrapping at breakpoints */
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.paragraphs {
+    padding: 0 8%;
+}
+
+.about-content >  .paragraphs > p,  .about-content >  .paragraphs > ul {
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24.22px;
+} 
+
+.figures {
+    background-color: #F2F1F1;
+}
+
+.figures div p {
+    margin: 0;
+    padding: 0;
+}
+
+.figures div {
+    padding: 10px 0;
+}
+
+.descriptions {
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.numbers {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 80px;
+}
+
+.units {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+#about-us {
+    margin-bottom: 30px;
+    box-shadow:  0 3px 10px -4px rgb(0 0 0 / 0.2); 
+}
+
+#our-customers {
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+@media only screen and (max-width: 375px) {
+    .about-heading {
+        font-size: 22px;
+    }
+}
