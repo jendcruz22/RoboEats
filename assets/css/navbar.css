@@ -23,7 +23,7 @@
     text-transform: uppercase;
 }
 
-.navbar ul li a:active, .navbar ul li a:visited {
+.navbar ul li a:active, .navbar ul li a:visited, .navbar ul li a:hover {
     color: #000000; /* Overrides Links Color */
 }
 
@@ -48,7 +48,6 @@
 
 /* Overlay CSS Starts */
 /* Reference: https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp */
-/* background */
 .overlay {
     height: 100%;
     width: 0;
@@ -62,7 +61,6 @@
     transition: 0.3s;
 }
 
-/* Position the content inside the overlay */
 .overlay-content {
     position: relative;
     width: 100%;
@@ -72,7 +70,6 @@
     padding: 0;
 }
 
-/* The navigation links inside the overlay */
 .overlay .overlay-links > a {
     padding: 10px;
     text-decoration: none;
@@ -85,17 +82,18 @@
     padding: 0;
 }
 
+.overlay .overlay-links > a:hover {
+    /* overlay-links styles */
+    color: #FCFCFC;
+    text-decoration: none;
+}
+
 .overlay-logo {
     width: 200px;
     padding: 20px;
 }
 
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-    color: #FCFCFC;
-}
-
-/* Position the close button */
+/* Close button position */
 .overlay .closebtn {
     position: absolute;
     top: 10px;
@@ -107,6 +105,12 @@
     color: #FFFFFF;
     font-size: 25px;
     font-family: 'Libre Caslon Text', serif;
+}
+
+#myNav > a:hover {
+    /* closebtn styles */
+    color: #FCFCFC;
+    text-decoration: none;
 }
 
 .overlay-footer {

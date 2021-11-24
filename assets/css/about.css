@@ -21,6 +21,10 @@ body {
     padding: 0;
 }
 
+main {
+    margin-top: 50px; /* Space for Navbar */
+}
+
 main .container-fluid {
     margin: 0;
     padding: 0;
