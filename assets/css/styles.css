@@ -1,5 +1,6 @@
 /* footer - start */
 .footer {
+  height: 50px;
   margin: 0 2em;
   display: flex;
   justify-content: space-between;
@@ -19,11 +20,3 @@
   align-self: center;
 }
 /* footer - end */
-
-.button-w {
-  border: 2px solid white;
-  color: black;
-  background-color: white;
-  padding: 0.3rem 0.7rem;
-  text-transform: uppercase;
-}
