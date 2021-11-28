@@ -1,38 +1,3 @@
-/* navigation - start */
-.header__logo {
-  margin-left: 2em;
-  height: 60px;
-  width: auto;
-}
-
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.nav__list {
-  align-self: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-}
-
-.nav__item {
-  margin-right: 2em;
-  list-style: none;
-}
-
-.nav__link {
-  font-family: Roboto, sans-serif;
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: black;
-}
-/* navigation end */
-
 /* footer - start */
 .footer {
   margin: 0 2em;
