@@ -19,4 +19,48 @@
 .footer__icons {
   align-self: center;
 }
+
+.m-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.m-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 110px;
+}
+
+.m-footer_li {
+  margin: 0.2em;
+}
+
+.m-footer__text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: black;
+  text-transform: uppercase;
+}
+
+.m-footer__icons-container {
+  width: 110px;
+}
+
+.m-footer__icons {
+  margin: 0 0.3em 0.7em 0;
+}
+
+.m-footer__copy {
+  padding-top: 2em;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .mobile {
+    display: block;
+  }
+}
 /* footer - end */
