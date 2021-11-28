@@ -101,7 +101,45 @@
   display: none;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1024px) {
+  .main__heading {
+    font-size: 4em;
+  }
+
+  .main__text {
+    font-weight: 500;
+    font-size: 1em;
+  }
+
+  .main__logo {
+    width: 240px;
+  }
+
+  .main__icons {
+    width: 240px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .main__heading {
+    font-size: 3em;
+  }
+
+  .main__text {
+    font-weight: 500;
+    font-size: 0.8em;
+  }
+
+  .main__logo {
+    width: 180px;
+  }
+
+  .main__icons {
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
   .desktop {
     display: none;
   }
