@@ -111,7 +111,7 @@ main {
 /* ========================================================================================================= */
 
 
-/* BREAKFAST MENU PAGE */
+/* ITEM MENU PAGE */
 
 #item-menu-options {
 	margin: 20px 100px 20px 100px;
@@ -203,7 +203,7 @@ main {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
-	/* BREAKFAST MENU PAGE */
+	/* ITEM MENU PAGE */
 	#item-menu-options {
 		margin: 0px;
 	}
@@ -238,7 +238,7 @@ main {
 		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	}
 
-	/* BREAKFAST MENU PAGE */
+	/* ITEM MENU PAGE */
 	.mobile {
 		padding-right: 0px;
 		padding-left: 0px;
