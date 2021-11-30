@@ -74,6 +74,8 @@ main {
 	padding: 10px;
 	margin: 0px 0px 20px 0px;
 	background-color: #FFF;
+	display: flex;
+    flex-direction: column;
 }
 
 .menu-content img {
@@ -103,7 +105,9 @@ main {
 	border-radius: 3px;
 	color: #fff;
 	background-color: #000;
+	margin-top: auto;
 }
+
 
 
 /* ========================================================================================================= */
