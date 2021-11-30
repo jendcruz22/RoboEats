@@ -1,4 +1,3 @@
-/* footer - start */
 .footer {
   height: 50px;
   margin: 0 2em;
@@ -60,7 +59,7 @@
   margin: auto;
 }
 
-.desktop {
+.desktop-footer {
   display: block;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
@@ -74,19 +73,17 @@
   }
 }
 
-.mobile {
+.mobile-footer {
   display: none;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
 @media only screen and (max-width: 480px) {
-  .desktop {
+  .desktop-footer {
     display: none;
   }
 
-  .mobile {
+  .mobile-footer {
     display: block;
   }
 }
-
-/* footer - end */
