@@ -14,6 +14,20 @@
 
 body {
     background-color: #FFFFFF;
+
+}
+
+main {
+    min-height: calc(100vh - 100px);
+}
+
+main .container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+#locations{
+    margin: 50px 100px 0px 100px;
 }
 
 #locations-heading {
@@ -22,6 +36,11 @@ body {
     font-size: 40px;
     text-transform: uppercase;
     line-height: 46.88px;
+    padding: 0 20px;
+}
+
+.locations-content {
+    padding: 0 20px;
 }
 
 .locations-content h2 {
@@ -63,22 +82,18 @@ body {
     border: 0;
 }
 
-@media only screen and (min-width: 1024px) {
-    #locations{
-        margin: 100px;
-    }
-    .locations-content, #locations-heading {
-        padding: 0 20px;
-    }
-}
-
 @media only screen and (max-width: 768px) {
+    #locations{
+        margin: 50px 10% 0px 10%;
+    }
+
     .locations-content {
         padding: 0 0 60px 0;
     }   
     
     #locations-heading {
         font-size: 22px;
+        padding: 0;
     }
 
     #locations h2 {
