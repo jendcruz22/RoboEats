@@ -1,17 +1,3 @@
-/* Common CSS Starts*/
-/* Fonts on this page:
-    Roboto Bold 700
-    Roboto Black 900
-    Roboto Slab 400
-    Roboto Bold 700
-
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Roboto Slab', serif;
-*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap');
-/* Common CSS Ends*/
-
-
 body {
     background-color: #FFFFFF;
 
