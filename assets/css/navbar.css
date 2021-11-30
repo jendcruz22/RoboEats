@@ -45,6 +45,14 @@
 .icon-bar {
     background-color:#0D0D0D !important; /* Overrides Hamburger Menu */
 }
+
+/* Display dropdown on hover */
+/* Reference: https://codingyaar.com/responsive-bootstrap-navbar-dropdown-on-hover/ */
+.dropdown-hover:hover .dropdown-hover-menu {
+    display: block;
+    margin-top: 0;
+}
+
 /* Overrides Default Bootstrap Styles Ends */
 
 
