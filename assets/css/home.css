@@ -34,6 +34,7 @@
   font-family: "Libre Caslon Text", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
+  margin-bottom: 2em;
 }
 
 .main__logo {
@@ -60,7 +61,7 @@
   border: 2px solid white;
   color: black;
   background-color: white;
-  padding: 0.4em 0.8em;
+  padding: 0.8em 2em;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -143,7 +144,6 @@
 
   .main__text {
     font-weight: 500;
-    font-size: 0.8em;
   }
 
   .main__logo {
@@ -170,6 +170,6 @@
   }
 
   .menu__link {
-    width: 10em;
+    width: 12em;
   }
 }
