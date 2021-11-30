@@ -11,9 +11,15 @@
       <link rel="stylesheet" href="assets/css/menu.css">
       <link rel="stylesheet" href="./assets/css/navbar.css">
       <link rel="stylesheet" href="./assets/css/footer.css">
+      
       <!-- BOOTSTRAP -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+      <!-- JQUERY -->
+      <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+      <script src="assets/js/items.js"></script>
+
    </head>
    <body>
       <!-- Navbar -->
@@ -75,12 +81,12 @@
       <!-- Main Content -->
       <main>
          <!-- BREAKFAST DESKTOP MOBILE VIEW -->
-         <div class="desktop container-fluid" id="breakfast-menu-options">
+         <div class="desktop container-fluid" id="item-menu-options" style="box-shadow: none;">
             <h1 id="menu-heading">BREAKFAST MENU</h1>
             <div class="row equal-cols">
                <!-- BREAKFAST -->
-               <div class="breakfast-divs col-12 col-sm-6">
-                  <div class="breakfast-menu">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
                      <img class="img-fluid" src="assets/img/breakfast.jpeg">
                      <h2>BREAKFAST</h2>
                      <p class="item-cost">$12.99</p>
@@ -88,8 +94,8 @@
                   </div>
                </div>
                <!-- LUNCH -->
-               <div class="breakfast-divs col-12 col-sm-6">
-                  <div class="breakfast-menu">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
                      <img class="img-fluid" src="assets/img/lunch.jpeg">
                      <h2>LUNCH</h2>
                      <p class="item-cost">$12.99</p>
@@ -100,8 +106,8 @@
 
             <div class="row equal-cols">
                 <!-- BREAKFAST -->
-                <div class="breakfast-divs col-12 col-sm-6">
-                   <div class="breakfast-menu">
+                <div class="item-divs col-12 col-sm-6">
+                   <div class="item-menu">
                       <img class="img-fluid" src="assets/img/breakfast.jpeg">
                       <h2>BREAKFAST</h2>
                       <p class="item-cost">$12.99</p>
@@ -109,8 +115,8 @@
                    </div>
                 </div>
                 <!-- LUNCH -->
-                <div class="breakfast-divs col-12 col-sm-6">
-                   <div class="breakfast-menu">
+                <div class="item-divs col-12 col-sm-6">
+                   <div class="item-menu">
                       <img class="img-fluid" src="assets/img/lunch.jpeg">
                       <h2>LUNCH</h2>
                       <p class="item-cost">$12.99</p>
@@ -121,8 +127,8 @@
              
             <div class="row equal-cols">
                <!-- DRINKS -->
-               <div class="breakfast-divs col-12 col-sm-6">
-                  <div class="breakfast-menu">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
                      <img class="img-fluid" src="assets/img/drinks.jpeg">
                      <h2>DRINKS</h2>
                      <p class="item-cost">$12.99</p>
@@ -130,8 +136,8 @@
                   </div>
                </div>
                <!-- DESSERTS -->
-               <div class="breakfast-divs col-12 col-sm-6">
-                  <div class="breakfast-menu">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
                      <img class="img-fluid" src="assets/img/dessert.jpg">
                      <h2>DESSERTS</h2>
                      <p class="item-cost">$12.99</p>
@@ -140,62 +146,165 @@
                </div>
             </div>
          </div>
+
          <!-- ========================================================================================================================================================================================================================== -->
          <!-- BREAKFAST MENU MOBILE VIEW -->
-         <div id="breakfast-menu-options" class="mobile container-fluid">
+         <div id="item-menu-options" class="mobile container-fluid">
             <h1 id="menu-heading">BREAKFAST MENU</h1>
 
-            <div class=" bf-item row">     
-                <div class="col-md-6 col-xs-6">
-                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
-                    <p class="item-cost">$12.99</p>
-                </div>   
-                <div class="col-md-6 col-xs-6 text-right">
-                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
-                </div>
-            </div>
+            <!-- ITEM 1 -->
+            <a class="menu-item" id="item1">
+               <div class=" bf-item row">     
+                  <div class="col-md-6 col-xs-6">
+                      <h2 class="item-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                      <p class="item-cost">$12.99</p>
+                  </div>   
+                  <div class="col-md-6 col-xs-6 text-right">
+                      <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                  </div>
+              </div>
+            </a>
 
-            <div class=" bf-item row">     
-                <div class="col-md-6 col-xs-6">
-                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
-                    <p class="item-cost">$12.99</p>
-                </div>   
-                <div class="col-md-6 col-xs-6 text-right">
-                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
-                </div>
-            </div>
+            <!-- ITEM 2 -->
+            <a class="menu-item" id="item2">
+               <div class=" bf-item row">     
+                  <div class="col-md-6 col-xs-6">
+                      <h2 class="item-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                      <p class="item-cost">$12.99</p>
+                  </div>   
+                  <div class="col-md-6 col-xs-6 text-right">
+                      <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                  </div>
+              </div>
+            </a>
             
-            <div class=" bf-item row">     
-                <div class="col-md-6 col-xs-6">
-                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
-                    <p class="item-cost">$12.99</p>
-                </div>   
-                <div class="col-md-6 col-xs-6 text-right">
-                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
-                </div>
+            <!-- ITEM 3 -->
+            <a class="menu-item" id="item3">
+               <div class=" bf-item row">     
+                  <div class="col-md-6 col-xs-6">
+                      <h2 class="item-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                      <p class="item-cost">$12.99</p>
+                  </div>   
+                  <div class="col-md-6 col-xs-6 text-right">
+                      <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                  </div>
+              </div>
+            </a>
+
+            <!-- ITEM 4 -->
+            <a class="menu-item" id="item4">
+               <div class=" bf-item row">     
+                  <div class="col-md-6 col-xs-6">
+                      <h2 class="item-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                      <p class="item-cost">$12.99</p>
+                  </div>   
+                  <div class="col-md-6 col-xs-6 text-right">
+                      <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                  </div>
+              </div>
+            </a>
+
+            <!-- ITEM 5 -->
+            <a class="menu-item" id="item5">
+               <div class=" bf-item row">     
+                  <div class="col-md-6 col-xs-6">
+                      <h2 class="item-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
+                      <p class="item-cost">$12.99</p>
+                  </div>   
+                  <div class="col-md-6 col-xs-6 text-right">
+                      <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
+                  </div>
+              </div>
+            </a>
+            
+         </div>
+
+         <!-- ITEM DESCRIPTIONS -->
+         <div id="item-menu-options" class="mobile container-fluid">
+
+            <!-- BREAKFAST ITEM 1 DESCRIPTION -->
+            <div class="row equal-cols" id="item1Description">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>Egg on Toast 1</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>A perfectly cooked sunny-side-up egg on a whole-grain slice of toast. 
+                        Topped with fresh avocado, diced tomato, red pepper flakes, and a 
+                        pinch of Himalayan salt.</p>
+                  </div>
+               </div>
             </div>
 
-            <div class=" bf-item row">     
-                <div class="col-md-6 col-xs-6">
-                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
-                    <p class="item-cost">$12.99</p>
-                </div>   
-                <div class="col-md-6 col-xs-6 text-right">
-                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
-                </div>
+            <!-- BREAKFAST ITEM 2 DESCRIPTION -->
+            <div class="row equal-cols" id="item2Description">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>Egg on Toast 2</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>A perfectly cooked sunny-side-up egg on a whole-grain slice of toast. 
+                        Topped with fresh avocado, diced tomato, red pepper flakes, and a 
+                        pinch of Himalayan salt.</p>
+                  </div>
+               </div>
             </div>
 
-            <div class=" bf-item row">     
-                <div class="col-md-6 col-xs-6">
-                    <h2 class="breakfast-heading">eggs and bacon w/ avocado on wholewheat bread</h2>      
-                    <p class="item-cost">$12.99</p>
-                </div>   
-                <div class="col-md-6 col-xs-6 text-right">
-                    <img class="bf-img col-md-5 col-xs-5 text-right" src="assets/img/breakfast.jpeg" style="height: 110px; width: auto;"/>
-                </div>
+            <!-- BREAKFAST ITEM 3 DESCRIPTION -->
+            <div class="row equal-cols" id="item3Description">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>Egg on Toast 3</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>A perfectly cooked sunny-side-up egg on a whole-grain slice of toast. 
+                        Topped with fresh avocado, diced tomato, red pepper flakes, and a 
+                        pinch of Himalayan salt.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- BREAKFAST ITEM 4 DESCRIPTION -->
+            <div class="row equal-cols" id="item4Description">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>Egg on Toast 4</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>A perfectly cooked sunny-side-up egg on a whole-grain slice of toast. 
+                        Topped with fresh avocado, diced tomato, red pepper flakes, and a 
+                        pinch of Himalayan salt.</p>
+                  </div>
+               </div>
+            </div>
+
+            <!-- BREAKFAST ITEM 5 DESCRIPTION -->
+            <div class="row equal-cols" id="item5Description">
+               <div class="item-divs col-12 col-sm-6">
+                  <div class="item-menu">
+                     <img class="img-fluid" src="assets/img/breakfast.jpeg">
+                     <h2>Egg on Toast 5</h2>
+                     <p class="item-cost">$12.99</p>
+                     <p>A perfectly cooked sunny-side-up egg on a whole-grain slice of toast. 
+                        Topped with fresh avocado, diced tomato, red pepper flakes, and a 
+                        pinch of Himalayan salt.</p>
+                  </div>
+               </div>
             </div>
             
          </div>
+         <!-- END OF ITEM DESCRIPTIONS -->
+
+         <!-- BACK TO MAIN MENU BUTTON -->
+         <div class="btm-btn" id="btm-mainMenu">
+            <a href="./menu.html">Back to Main Menu</a>
+         </div>
+
+         <!-- BACK TO BREAKFAST MENU BUTTON -->
+         <div class="btm-btn" id="btm-bfMenu">
+            <a>Back to Breakfast Menu</a>
+         </div>
+
       </main>
       <footer>
          <div class="desktop">
@@ -264,5 +373,6 @@
        </footer>
       <!-- End of Main content -->
    <script src="./assets/js/navbar.js"></script>
+
    </body>
 </html>
