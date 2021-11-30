@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&family=Roboto+Slab:wght@400;700&family=Roboto:wght@700;900&display=swap");
+
 .main {
   color: white;
   background-image: url("../img/home_bg.png");
@@ -29,6 +31,7 @@
 }
 
 .main__text {
+  font-family: "Libre Caslon Text", sans-serif;
   font-weight: 500;
   font-size: 1.3em;
 }
@@ -43,16 +46,24 @@
   display: flex;
   align-self: center;
   justify-content: space-between;
+  padding: 0 30px;
+}
+
+.main__icons > img {
+  width: 30px;
+  height: auto;
 }
 
 .menu__link {
-  font-size: 1.3em;
+  font-family: Roboto, sans-serif;
+  font-size: 1em;
   border: 2px solid white;
   color: black;
   background-color: white;
   padding: 0.4em 0.8em;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
 }
 
 .menu__link:hover {
@@ -84,6 +95,7 @@
 .m-main__heading {
   align-self: center;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 2em;
 }
@@ -118,6 +130,10 @@
   .main__icons {
     width: 240px;
   }
+
+  .main__icons > img {
+    width: 27px;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -136,6 +152,11 @@
 
   .main__icons {
     width: 180px;
+    padding: 0 20px;
+  }
+
+  .main__icons > img {
+    width: 22px;
   }
 }
 
@@ -146,5 +167,9 @@
 
   .mobile {
     display: block;
+  }
+
+  .menu__link {
+    width: 10em;
   }
 }

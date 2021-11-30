@@ -14,10 +14,12 @@
   text-transform: uppercase;
   color: black;
   margin: 0;
+  padding-left: 0.8em;
 }
 
 .footer__icons {
   align-self: center;
+  padding-right: 0.8em;
 }
 
 .m-footer {
@@ -61,6 +63,15 @@
 .desktop {
   display: block;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer__icons {
+    padding-right: 0.9em;
+  }
+  .footer__text {
+    padding-left: 0.9em;
+  }
 }
 
 .mobile {
