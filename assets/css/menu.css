@@ -177,7 +177,7 @@ main {
 		margin: 10px 0px;
 		box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 	}
-	.container-fluid {
+	main .container-fluid {
 		padding-left: 0px;
 		padding-right: 0px;
 	}
