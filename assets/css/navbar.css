@@ -30,6 +30,8 @@
 .navbar-custom {
     background-color:#FFFFFF; /* Set Navbar Color */
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 .navbar .navbar-brand {
