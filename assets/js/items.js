@@ -8,6 +8,7 @@ function breakfastItemDisplay(){
         $("#item3Description").hide();
         $("#item4Description").hide();
         $("#item5Description").hide();
+        $("#item6Description").hide();
         $("#btm-bfMenu").hide();
 
         // Display item 1 description ONLY
@@ -20,6 +21,7 @@ function breakfastItemDisplay(){
             $("#item3").hide();
             $("#item4").hide();
             $("#item5").hide();
+            $("#item6").hide();
             $("#btm-mainMenu").hide();
         })
 
@@ -33,6 +35,7 @@ function breakfastItemDisplay(){
             $("#item3").hide();
             $("#item4").hide();
             $("#item5").hide();
+            $("#item6").hide();
             $("#btm-mainMenu").hide();
         })
 
@@ -46,6 +49,7 @@ function breakfastItemDisplay(){
             $("#item3").hide();
             $("#item4").hide();
             $("#item5").hide();
+            $("#item6").hide();
             $("#btm-mainMenu").hide();
         })
 
@@ -59,6 +63,7 @@ function breakfastItemDisplay(){
             $("#item3").hide();
             $("#item4").hide();
             $("#item5").hide();
+            $("#item6").hide();
             $("#btm-mainMenu").hide();
         })
 
@@ -72,6 +77,21 @@ function breakfastItemDisplay(){
             $("#item3").hide();
             $("#item4").hide();
             $("#item5").hide();
+            $("#item6").hide();
+            $("#btm-mainMenu").hide();
+        })
+
+        // Display item 5 description ONLY
+        $("#item6").click(function(){
+            $("#item6Description").show();
+            $("#btm-bfMenu").show();
+
+            $("#item1").hide();
+            $("#item2").hide();
+            $("#item3").hide();
+            $("#item4").hide();
+            $("#item5").hide();
+            $("#item6").hide();
             $("#btm-mainMenu").hide();
         })
 
@@ -82,6 +102,7 @@ function breakfastItemDisplay(){
             $("#item3").show();
             $("#item4").show();
             $("#item5").show();
+            $("#item6").show();
             $("#btm-mainMenu").show();
 
             $("#item1Description").hide();
@@ -89,6 +110,7 @@ function breakfastItemDisplay(){
             $("#item3Description").hide();
             $("#item4Description").hide();
             $("#item5Description").hide();
+            $("#item6Description").hide();
             $("#btm-bfMenu").hide();
         })
 

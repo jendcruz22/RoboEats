@@ -122,6 +122,12 @@ main {
 	padding-right: 0px;
 }
 
+.item-divs a{
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
 .item-menu {
 	text-align: center;
 	padding: 10px;
@@ -167,6 +173,7 @@ main {
 
 .menu-item {
 	color: black;
+	text-decoration: none;
 }
 
 /* BACK TO MENU BUTTON */
