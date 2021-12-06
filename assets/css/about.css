@@ -16,16 +16,16 @@ main .container-fluid {
     padding: 0;
 }
 
-.row {
+main .row {
     margin: 0;
 }
 
-#about-us img {
-    margin-right: 60px;
+main div{
+    overflow: hidden;
 }
 
-#our-customers img {
-    margin-left: 60px;
+div[class^="col"] {
+    padding: 0;
 }
 
 .about-heading {
@@ -33,17 +33,23 @@ main .container-fluid {
     font-weight: 900;
     font-size: 40px;
     text-transform: uppercase;
-    line-height: 46.88px;                
-    /* Prevent wrapping at breakpoints */
-    margin: 10px 0;
-    display: inline-block;
+    line-height: 46.88px;
+}
+
+main p {
+    margin: 2% 0;
+}
+
+main img {
+    width: 100%;
+    height: auto;
 }
 
 .paragraphs {
     padding: 0 8%;
 }
 
-.about-content >  .paragraphs > p,  .about-content >  .paragraphs > ul {
+.about-content >  .paragraphs > p {
     font-family: 'Libre Caslon Text', serif;
     font-weight: 400;
     font-size: 14px;
@@ -67,6 +73,10 @@ main .container-fluid {
     font-family: 'Libre Caslon Text', serif;
     font-weight: 500;
     font-size: 24px;
+}
+
+.figures div p:nth-child(even) {
+    margin-top: -10px;
 }
 
 .numbers {
@@ -93,5 +103,11 @@ main .container-fluid {
 @media only screen and (max-width: 375px) {
     .about-heading {
         font-size: 22px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .about-content {
+        padding-top: 90px;
     }
 }
