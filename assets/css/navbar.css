@@ -26,8 +26,23 @@
     height: 45px; /* Set Logo Height */
 }
 
+.navbar .nav img {
+    /* Set bag icon size */
+    width: 15.75px;
+    height: 18px;
+}
+
+.navbar .checkout img {
+    /* Set bag icon size (mobile) */
+    width: 21px;
+    height: 24px;
+    margin: 14px 3px;
+}
+
 .icon-bar {
     background-color:#0D0D0D !important; /* Overrides Hamburger Menu */
+    border: 1.5px solid #0D0D0D;
+    border-radius: 25px !important; 
 }
 
 /* Display dropdown on hover */
