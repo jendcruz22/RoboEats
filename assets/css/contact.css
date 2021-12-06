@@ -1,0 +1,131 @@
+main {
+    /* For navbar */
+    margin-top: 50px;
+    
+    /* For footer */
+    min-height: calc(100vh - 100px);
+
+    background: url("../img/contact-robot.svg") right bottom no-repeat;
+    background-color: #131313;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 46.25px;
+    margin: 0;
+    padding: 0;
+}
+
+main p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 23.13px;
+    margin: -5px 0 0 0;
+    padding: 0;
+}
+
+main form {
+    /* max-width: 391px; */
+    margin: 0 auto;
+}
+
+main .form-group {
+    margin: 15px 0;
+}
+
+main label {
+    display: none;
+}
+
+main input, main textarea{
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.76px;
+    color: #9E9E9E;
+
+    width: 100%;
+    border: 0;
+    background-color: #2C2D2D;
+    padding: 10px;
+}
+
+main button {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 14.06px;
+    color: #000000;
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 10px 40px;
+    border-radius: 4px;
+}
+
+button:hover {
+    color: #9E9E9E;
+    background-color:#2C2D2D;
+    border: 1px solid #9E9E9E;
+}
+
+#statusMessage {
+    font-family: 'Libre Caslon Text', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20.76px;
+    color: #9E9E9E;
+    overflow-wrap: break-word;
+}
+
+@media only screen and (max-width: 425px) {
+    main form {
+    margin: 0 8%;
+    }
+
+    .mobile-footer {
+        background-color: #0F0F0F;
+    }
+
+    .m-footer__text {
+        color: #FFFFFF;
+    }
+
+    .m-footer__icons:nth-of-type(1) {
+        content: url("../icons/facebook_w.svg");
+    }
+
+    .m-footer__icons:nth-of-type(2) {
+        content: url("../icons/instagram_w.svg");
+    }
+
+    .m-footer__icons:nth-of-type(3) {
+        content: url("../icons/tiktok_w.svg");
+    }
+
+    .m-footer__icons:nth-of-type(4) {
+        content: url("../icons/ubereats_w.svg");
+    }
+
+    .m-footer__icons:nth-of-type(5) {
+        content: url("../icons/doordash_w.svg");
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        background: url("../img/contact-text.svg") left top repeat-y, url("../img/contact-robot.svg") right bottom no-repeat;
+        background-color: #131313;
+    }
+}

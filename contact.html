@@ -11,23 +11,13 @@
         <link rel="stylesheet" href="./assets/css/global.css">
         <link rel="stylesheet" href="./assets/css/navbar.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
-        <style>
-          /* Use these in your page (as necessary) */
-
-          main {
-            /* For navbar */
-            margin-top: 50px;
-            
-            /* For footer */
-            min-height: calc(100vh - 100px);
-          }
-        </style>
+        <link rel="stylesheet" href="./assets/css/contact.css">
 
         <!-- BOOTSTRAP -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-        <title>RoboEats | Template</title>
+        <title>RoboEats | Contact</title>
     </head>
     <body>
       <!-- Navbar -->
@@ -102,7 +92,28 @@
 
       <!-- Main Content -->
       <main>
-          <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel molestiae voluptatem veritatis delectus possimus rerum aspernatur ad! Temporibus, impedit neque. Illum itaque reprehenderit eligendi nisi. Optio debitis quaerat placeat enim veniam recusandae nostrum fuga facere. Dolores maxime, labore similique quos officiis aut dolorem laboriosam deleniti nesciunt at, molestias consequatur, aliquid rerum distinctio illum ipsa doloribus sint cumque! Culpa, quidem exercitationem molestias at voluptate deserunt distinctio aut sapiente. Minus natus temporibus perferendis deserunt adipisci numquam ut voluptates voluptatum est magnam ratione, odit a, accusantium id quisquam, autem praesentium. Quae ratione ut delectus sapiente pariatur sed aspernatur blanditiis ipsa unde corporis recusandae dolore, a aperiam nulla animi ab laboriosam. Harum fuga dolorem optio, ducimus expedita placeat vel est! Temporibus facere distinctio saepe deleniti dicta, eveniet ut, quasi, nihil nesciunt explicabo molestiae? Tempora ipsa ex ducimus nihil, inventore unde impedit odit adipisci placeat vel, tenetur reiciendis non ratione accusamus possimus quod modi numquam eveniet cumque nemo nobis amet officia. Voluptatum iusto quisquam magni dolores in non suscipit repellat. At ratione architecto veritatis doloribus, blanditiis placeat dignissimos eaque aspernatur qui totam fugiat ad consectetur quas rem, cupiditate laborum autem officiis. Debitis asperiores in, dolorum suscipit eius nesciunt deserunt excepturi explicabo fuga cupiditate tempore aliquam ad, possimus totam ea cumque et? Magni voluptatum maxime non molestias aperiam placeat consectetur laudantium, quidem nobis saepe quibusdam impedit, dolorem cumque, ullam asperiores qui iusto numquam ex eaque? Reiciendis rem, vero numquam ipsum inventore vitae autem itaque fuga aspernatur voluptas magni. Doloremque minus odit culpa tempora! Molestiae ullam libero perspiciatis minus delectus autem nisi animi assumenda cumque distinctio harum tempore doloribus, laudantium voluptatibus, commodi fuga cupiditate architecto tempora odit vero eveniet nemo fugit. Laboriosam accusamus quod nulla voluptatibus. Ipsam autem, at iusto sunt atque laboriosam dolorem nihil quam eum maiores odio pariatur nesciunt ullam mollitia, numquam magni minima! Maxime.</div>
+          <form name="contactForm" action="#" method="POST">
+            <h1>Have a question?</h1>
+            <p>Send us a message!</p>
+            <div class="form-group">
+              <label for="firstName">First Name:</label>
+              <input type="text" name="firstName" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group"></div>
+              <label for="lastName">Last Name:</label>
+              <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-group"></div>
+              <label for="email">Email:</label>
+              <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">            
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="6" cols="50" placeholder="Your Message"></textarea>
+            </div>
+            <div id="statusMessage"></div>
+            <button type="submit">Send</button>
+          </form>
       </main>
       <!-- End of Main content -->
 
@@ -177,4 +188,5 @@
       <!-- End of Footer -->
     </body>
     <script src="./assets/js/navbar.js"></script>
+    <script src="./assets/js/contact.js"></script>
 </html>
