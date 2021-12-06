@@ -74,19 +74,18 @@ main button {
     border-radius: 4px;
 }
 
-button:hover {
-    color: #9E9E9E;
-    background-color:#2C2D2D;
+main button:hover {
+    background-color:#EEEEEE;
     border: 1px solid #9E9E9E;
 }
 
 #statusMessage {
-    font-family: 'Libre Caslon Text', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 12px;
-    line-height: 20.76px;
-    color: #9E9E9E;
-    overflow-wrap: break-word;
+    line-height: 23.13px;
+    margin-bottom: 25px;
+    color: #EEEEEE;
 }
 
 @media only screen and (max-width: 425px) {
