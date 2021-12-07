@@ -1,6 +1,6 @@
-window.onload = breakfastItemDisplay;
+window.onload = ItemDisplay;
 
-function breakfastItemDisplay(){
+function ItemDisplay(){
     jQuery(document).ready(function () {
         // Hide all item descriptions
         $("#item1Description").hide();
@@ -9,12 +9,12 @@ function breakfastItemDisplay(){
         $("#item4Description").hide();
         $("#item5Description").hide();
         $("#item6Description").hide();
-        $("#btm-bfMenu").hide();
+        $("#btm-Menu").hide();
 
         // Display item 1 description ONLY
         $("#item1").click(function(){
             $("#item1Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -28,7 +28,7 @@ function breakfastItemDisplay(){
         // Display item 2 description ONLY
         $("#item2").click(function(){
             $("#item2Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -42,7 +42,7 @@ function breakfastItemDisplay(){
         // Display item 3 description ONLY
         $("#item3").click(function(){
             $("#item3Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -56,7 +56,7 @@ function breakfastItemDisplay(){
         // Display item 4 description ONLY
         $("#item4").click(function(){
             $("#item4Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -70,7 +70,7 @@ function breakfastItemDisplay(){
         // Display item 5 description ONLY
         $("#item5").click(function(){
             $("#item5Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -84,7 +84,7 @@ function breakfastItemDisplay(){
         // Display item 5 description ONLY
         $("#item6").click(function(){
             $("#item6Description").show();
-            $("#btm-bfMenu").show();
+            $("#btm-Menu").show();
 
             $("#item1").hide();
             $("#item2").hide();
@@ -96,7 +96,7 @@ function breakfastItemDisplay(){
         })
 
         // BACK TO BREAKFAST MENU BUTTON
-        $("#btm-bfMenu").click(function(){
+        $("#btm-Menu").click(function(){
             $("#item1").show();
             $("#item2").show();
             $("#item3").show();
@@ -111,7 +111,7 @@ function breakfastItemDisplay(){
             $("#item4Description").hide();
             $("#item5Description").hide();
             $("#item6Description").hide();
-            $("#btm-bfMenu").hide();
+            $("#btm-Menu").hide();
         })
 
     }); 
